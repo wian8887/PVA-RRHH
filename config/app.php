@@ -245,6 +245,8 @@ return [
 		'Util' => App\Helpers\Util::class,
 		// LDAP
 		'Ldap' => App\Helpers\Ldap::class,
+		// LDAP
+		'ZKLibrary' => App\Helpers\ZKLibrary::class,
 
 		// Carbon
 		'Carbon' => \Carbon\Carbon::class,

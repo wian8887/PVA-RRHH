@@ -216,6 +216,7 @@ Route::group([
 		Route::group([
 			'middleware' => 'role:admin',
 		], function () {
+			Route::resource('bio', 'Api\V1\BioController')->only(['index']);
 			// User
 			Route::resource('ldap', 'Api\V1\LdapController')->only(['index', 'store', 'show', 'update']);
 			Route::resource('user', 'Api\V1\UserController')->only(['index', 'store', 'show', 'update', 'destroy']);

@@ -14,6 +14,7 @@ import DepartureIndex from './components/departure/DepartureIndex'
 import DepartureAdmin from './components/departure/DepartureAdmin'
 import Dashboard from './components/dashboard/Dashboard'
 import PhonebookIndex from './components/phonebook/PhonebookIndex'
+import BioIndex from './components/bio/BioIndex'
 
 export const routes = [
   {
@@ -133,6 +134,13 @@ export const routes = [
     path: '/phonebook',
     component: PhonebookIndex,
     name: 'phonebookIndex',
+    meta: {
+      requiresAuth: true
+    }
+  }, {
+    path: '/bio',
+    component: BioIndex,
+    name: 'bioIndex',
     meta: {
       requiresAuth: true
     }

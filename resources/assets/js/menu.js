@@ -1,6 +1,11 @@
 export default {
   admin: [
     {
+      href: 'bioIndex',
+      title: 'Biometrico',
+      icon: 'key'
+    },
+    {
       href: 'dashboard',
       title: 'Inicio',
       icon: 'home'
